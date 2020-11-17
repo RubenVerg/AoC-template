@@ -1,0 +1,1 @@
+export type DayResolver = (day: number) => Promise<string> | string;
