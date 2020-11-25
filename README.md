@@ -20,7 +20,7 @@ eg `7a` or `23a 23b 24a 24b`
 
 ### Input
 
-The `data` folder contains 25 (26, really) files. They are currently empty, fill them with the related day's input. (Automatic fetch coming soon™)
+The `data` folder contains 25 (26, really) files. They are currently empty. If they're empty at runtime, their content is automatically fetched from the AoC site. (please set `src/tools/token.ts` to export your `session` cookie) or fill them with the related day's input (for testing etc).
 
 ### Code
 
@@ -34,4 +34,4 @@ export default e(async _input => {
 });
 ```
 
-The only thing you need to edit is inside `async _input => {}`, that's where stuff happens. Return the day's output and console-log any debug information. The functions is declared `async` so you can easily use all the async stuff around the web.
+The only thing you need to edit is inside `async _input => {}`, that's where stuff happens. Return the day's output and console-log any debug information. The functions is declared `async` so you can easily `await` all the async stuff around the web. `_input` is a `string`.
