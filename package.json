@@ -1,7 +1,7 @@
 {
-  "name": "2020",
+  "name": "aoc-ts-template",
   "version": "1.0.0",
-  "description": "Advent of Code 2020",
+  "description": "Advent of Code TS Template",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
