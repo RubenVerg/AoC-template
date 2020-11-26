@@ -1,4 +1,4 @@
-export type DayResolver = (day: number) => Promise<string> | string;
+export type DayResolver = (day: Day, year?: Year) => Promise<string> | string;
 
 export type Year = 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022; // More later, seems a little overkill otherwise.
 
