@@ -4,15 +4,14 @@
 
 ```sh
 git clone https://github.com/RubenVerg/AoC-template/ aoc
-npm install -g typescript # if needed
+npm install -g typescript ts-node # if needed
 cd aoc
 ```
 
 ### To run a day (or more)
 
 ```sh
-tsc -p .
-node . {days}
+ts-node . {days}
 ```
 
 where `days` is a space-separated list of `{1..25}{a|b}` (or `0`, for a test)
@@ -35,3 +34,7 @@ export default e(async _input => {
 ```
 
 The only thing you need to edit is inside `async _input => {}`, that's where stuff happens. Return the day's output and console-log any debug information. The functions is declared `async` so you can easily `await` all the async stuff around the web. `_input` is a `string`.
+
+## Contributions
+
+Check out some issues!
